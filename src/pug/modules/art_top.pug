@@ -1,0 +1,33 @@
+section#art_top.art_top
+    .container
+          .art_top__tab.art_tabs-item
+            .art_tabs-item__body
+              .art_tabs-item__nav
+                ul.art_top-nav
+                  - 
+                    items = [
+                    { title: "О компании " },
+                    { title: "Карта филиалов " },
+                    { title: "Фотоархив " },
+                    { title: "Видеоархив " },
+                    ]
+
+                  each item in items
+                    li.art_top-nav__item
+                      a(href="#!").art_top-nav__link=item.title
+              .art_tabs-item__title.tabs-title-js Еще
+                i.icon-play_arrow.art_tabs-item__img.tabs-img-js
+              .art_tabs__drop.art_tabs-drop.tabs-drop-js
+                .art_tabs-drop__body
+                  ul.art_top-nav
+                    - 
+                      items = [
+                      { title: "О компании " },
+                      { title: "Карта филиалов " },
+                      { title: "Фотоархив " },
+                      { title: "Видеоархив " },
+                      ]
+
+                    each item in items
+                      li.art_top-nav__item
+                        a(href="#!").art_top-nav__link=item.title

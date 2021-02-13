@@ -1,0 +1,165 @@
+*
+  // outline: 1px solid green
+  box-sizing: border-box
+
+
+.art_container
+  // outline: 1px solid #4164ff
+//------.container--------
+.art_container
+
+  min-width: 1110px
+  // height:
+  // flex: 0 1 100%
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+//-------------
+
+
+
+
+.bg
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+a
+  display: block
+  transition: all 0.2s ease-in-out
+  color:  $text
+  
+  &:hover
+    // color: darken($green, 50%)
+    cursor: pointer
+
+
+.lock
+  overflow: hidden
+.active
+  opacity: 1
+  visibility: visible
+  display: block
+
+
+
+.up_down_btn
+  position: fixed
+  background: -o-linear-gradient(357.31deg, #DEF1D7 0, #7AB764 100%)
+  background: linear-gradient(92.69deg, #DEF1D7, #7AB764)
+  right: 20px
+  bottom: 20px
+  padding: 7px
+  border-radius: 50%
+  cursor: pointer
+  display: none
+  z-index: 200
+  opacity: .5
+  transition: all 0.5s
+  color: white
+  font-size: 20px
+  font-weight: bold
+
+  &:hover
+    text-decoration: none
+    opacity: 1
+
+  &-show
+    display: block
+
+  &-disabled
+    pointer-events: none
+    cursor: default
+    opacity: 0
+
+  @media (min-width: 0px) and (max-width: 768px)
+    &
+      display: none
+
+
+
+
+.scroll-block::-webkit-scrollbar-track
+  border-radius: 4px
+
+.scroll-block::-webkit-scrollbar
+  width: 10px
+
+.scroll-block::-webkit-scrollbar-thumb
+  border-radius: 4px
+  background: #f0f2f5
+
+.scroll-block:hover::-webkit-scrollbar-thumb
+  background: #ececec
+
+
+
+
+// ============================================================================
+
+  
+
+
+body
+  +bg($bg)
+  font-family: 'Open Sans', sans-serif
+  font-weight: 600
+  font-style: normal
+  font-size: 14px
+  line-height: 24px
+  color: $text
+
+.art_board
+  background: #FFFFFF
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+  border-radius: 4px
+
+
+.art_title
+  font-weight: 700
+  line-height: 19px
+  font-size: 14px
+  text-transform: uppercase
+
+.art_title-main
+  font-weight: 300
+  font-size: 26px
+  line-height: 35px
+
+.art_title-1
+  font-weight: 600
+  font-size: 15px
+  line-height: 20px
+
+.art_title-2
+  font-size: 16px
+  color: #4A4A4A
+
+.art_title-3
+  font-size: 14px
+  font-weight: 700
+  line-height: 19px
+
+.art_title-4
+  font-size: 14px
+  font-weight: 700
+  line-height: 19px
+  text-transform: uppercase
+
+.art_title-5
+  font-size: 14px
+  line-height: 20px
+  color: #4A4A4A

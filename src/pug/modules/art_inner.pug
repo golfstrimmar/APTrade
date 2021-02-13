@@ -1,0 +1,48 @@
+main#art_inner.art_inner
+    .art_container
+        h1.art_inner__title.art_title-main  О компании
+        .art_inner__wrapper
+          section.art_inner__content.art_inner-content
+            article.art_inner-content__article.art_board.art_inner-article
+              h2.art_inner-article__title.art_title компания сегодня
+              .art_inner-article__img
+              .art_inner-article__right
+                h3.art_inner-article__sub-title.art_title-2 Информация о компании
+                p.art_inner-article__paragraph  Компания «Эй-Пи Трейд» основана  в 1995 году в Хабаровске. С первых дней мы ставим перед собой цель построения взаимовыгодных и долгосрочных отношений с партнерами, благодаря чему из регионального оператора выросли в крупную компанию России. 
+                p.art_inner-article__paragraph.art_inner-article__paragraph--accent На сегодня территория покрытия рынка от всей площади Российской Федерации составляет более 77%. Филиальная сеть включает 50 филиалов с координационным центром в городе Хабаровск.Мы — крупный игрок рынка FMCG-дистрибьюции на территории Дальнего Востока, Сибири и Урала, построивший совместный бизнес с партнерами: Procter&Gamble, Nestle, Jacobs, Purina, UPECO, MARS, BAGI, «РОСЭЛ», который основан на принципе победы в магазинах за счет команды высококомпетентных профессионалов, передовых технологий и амбициозных задач, направленных на развитие совместного бизнеса.
+                p.art_inner-article__paragraph  Мы — полноценный 3PL-оператор и предоставляем клиентам комплекс услуг: от доставки и адресного хранения до управления заказами и отслеживания движения товаров, наши складские технологии отвечают последним современным требованиям рынка, а складские комплексы соответствуют мировым стандартам.
+                p.art_inner-article__paragraph  Более 3 500 сотрудников работают в различных направлениях бизнеса. Мы – это талантливая команда профессионалов с разным опытом, но схожим мышлением. Мы ценим целеустремленных и активных сотрудников и всегда приветствуем развитие и рост сотрудников в рамках разных функций, направлений и локаций. Огромная территория нашей компании, широкий портфель брендов и направлений 
+              .art_inner-article__galery-title.art_title-2  Видео о компании
+              .art_inner-article__galery.art_inner-article-galery
+                  .art_inner-article-galery__img
+                    a(href="#!" rel="slide-1-popup").art_inner-article-galery__play.popup-init-js
+                  .art_inner-article-galery__img
+                    a(href="#!" rel="slide-2-popup").art_inner-article-galery__play.popup-init-js
+                  .art_inner-article-galery__img
+                    a(href="#!" rel="slide-3-popup").art_inner-article-galery__play.popup-init-js
+                  .art_inner-article-galery__img
+                    a(href="#!" rel="slide-4-popup").art_inner-article-galery__play.popup-init-js
+          aside.art_inner__vidget.art_board.art_inner-vidget
+            button.btn.btn--success(type='button').art_inner-vidget__button-top  Быстрая навигация
+            ul.art_inner-vidget__items
+              li.art_inner-vidget__item.art_inner-vidget-item.art_inner-vidget-item--active
+                  a(href="#!").art_inner-vidget-item__link
+                    .art_inner-vidget-item__title Компания сегодня
+                    img(src="assets/img/vidget/img-1.svg" ,alt="img").art_inner-vidget-item__icon
+              - 
+                  items = [
+                      { title: "История развития ", src:"assets/img/vidget/img-5.svg"},
+                      { title: "Миссия компании ", src:"assets/img/vidget/img-6.svg"},
+                      { title: "Стратегия компании ", src:"assets/img/vidget/img-7.svg"},
+                      { title: "Наши ценности ", src:"assets/img/vidget/img-8.svg"},
+                      { title: "Манифест ", src:"assets/img/vidget/img-10.svg"},
+                      { title: "Команда ", src:"assets/img/vidget/img-3.svg"},
+                      { title: "Партнерство ", src:"assets/img/vidget/img-4.svg"},
+                      { title: "Компания ", src:"assets/img/vidget/img-2.svg"},
+                    ]
+  
+              each item in items
+                li.art_inner-vidget__item.art_inner-vidget-item
+                  a(href="#!").art_inner-vidget-item__link
+                    .art_inner-vidget-item__title=item.title
+                    img(src=item.src ,alt="img").art_inner-vidget-item__icon

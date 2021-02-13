@@ -1,0 +1,45 @@
+.popup
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  +bg(rgba(0, 0, 0, 0.8))
+  // overflow: auto
+  display: none
+  z-index: 1000
+  &__overlay
+    width: 100%
+    min-height: 100vh
+    background-color: rgba(0, 0, 0, 0.9)
+    overflow: auto
+    z-index: 1000  //-------------- !!!
+    +center()
+  &__inner
+    position: relative
+    flex: 0 1 90%
+    padding: 0 0 
+    min-height: 80vh
+    +bg(  #ff9419)
+    border: 30px solid DARKSLATEGRAY
+    border-radius: 10px
+    z-index: 1010   //-------------- !!!
+    i
+      display: block
+      color: lighten(DARKSLATEGRAY, 20%)
+      +absolute(20px,20px,-24px,null,-22px,0%,0%)
+      font-size: 20px
+      &:hover
+        cursor: pointer
+// inner- flex
+// popup не ограничен. в итоге может быть больше окна и скролится
+
+
+.player
+  +pro
+  min-height: 80vh
+  margin: 0px auto
+  background-color: #bee1ff
+  position: relative
+  iframe
+    +absolute(100%,100%,0,0,auto,0%,0%)
