@@ -22,27 +22,203 @@ main#art_inner.art_inner
                     a(href="#!" rel="slide-3-popup").art_inner-article-galery__play.popup-init-js
                   .art_inner-article-galery__img
                     a(href="#!" rel="slide-4-popup").art_inner-article-galery__play.popup-init-js
-          aside.art_inner__vidget.art_board.art_inner-vidget
-            button.btn.btn--success(type='button').art_inner-vidget__button-top  Быстрая навигация
-            ul.art_inner-vidget__items
-              li.art_inner-vidget__item.art_inner-vidget-item.art_inner-vidget-item--active
-                  a(href="#!").art_inner-vidget-item__link
-                    .art_inner-vidget-item__title Компания сегодня
-                    img(src="assets/img/vidget/img-1.svg" ,alt="img").art_inner-vidget-item__icon
-              - 
+          
+ 
+            
+            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+              h2.art_inner-article__title.art_title.art_inner-article__title--mission История развития
+              .art_inner-article__right.art_inner-article__right--mission
+                p.art_inner-article__paragraph  История АР Трейд создается совместными усилиями наших сотрудников, клиентов и партнеров.  Каждый человек, каждая высказанная идея и каждое решение, воплощенное в жизнь, способствуют нашему общему делу. 
+                ul.art_inner-article__data.art_inner-article-data
+                  li.art_inner-article-data__item.art_article-data-item
+                      a(href="#!").art_article-data-item__link
+                        i.icon-arrow-left  
+                  - 
+                    items = [
+                        { title: "2017", },
+                        { title: "2017", },
+                        { title: "2016", },
+                        { title: "2015", },
+                        { title: "2014", },
+                        { title: "2013", },
+                        { title: "2012", },
+                        { title: "2011", },
+                        { title: "2010", },
+                        { title: "2009", },
+                        { title: "2008", },
+                        { title: "2007", },
+                        { title: "2006", },
+                        { title: "2005", },
+                        { title: "2004", },
+                        { title: "2003", },
+                      ]
+                  each item in items
+                    li.art_inner-article-data__item.art_article-data-item
+                      a(href="#!").art_article-data-item__link=item.title
+                  li.art_inner-article-data__item.art_article-data-item
+                      a(href="#!").art_article-data-item__link
+                        i.icon-arrow-right  
+                .art_inner-article__info.art_inner-article-info
+                  .art_inner-article-info__title Заключен контракт с Jacobs
+                  .art_inner-article-info__text Дистрибуция в Хабаровске, Благовещенске, Комсомольске-на-Амуре, Камчатке
+                  .art_inner-article-info__title  Заключены контракты с Bridgestone, Nokian Tyres, “АЮСС-Лоджистик”, KYB, Idemitsu
+
+                h3.art_inner-article__sub-title.art_title-2.art_inner-article__sub-title--mission Награды
+                //- .art_inner-article__slider.slider.slider__slider.article-slider
+                //-   .slider__arrows
+                //-     i.slider__arrow.slider__arrow_prev.slider__arrow_prev--1.icon-chevron-left
+                //-     i.slider__arrow.slider__arrow_next.slider__arrow_next--1.icon-chevron-right
+                //-   ul.slider__body.slider__body--article-slider.slider-js-1
+                //-     - 
+                //-       slides = [
+                //-           {title:"Лучший запуск"},
+                //-            {title:"Прорыв года"},
+                //-            {title:"HR проект года"},
+                //-            {title:"IT прорыв года"},
+                //-            {title:"Лучший финансовый анализ"},
+                //-           {title:"Лучший запуск"},
+                //-           {title:"Прорыв года"},
+                //-            {title:"HR проект года"},
+                //-            {title:"IT прорыв года"},
+                //-            {title:"Лучший финансовый анализ"}
+                //-           ]
+                //-     each item in slides
+                //-        li.slider__item.article-slider__item.article-slider-item
+                //-          .article-slider-item__title=item.title
+
+
+
+
+            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+              h2.art_inner-article__title.art_title.art_inner-article__title--mission Миссия компании
+              .art_inner-article__right.art_inner-article__right--mission
+                h3.art_inner-article__sub-title.art_title-2.art_inner-article__sub-title--mission Создаем достойное будущее с лидерами
+                p.art_inner-article__paragraph  
+                  span Мы повышаем качество жизни людей и будущих поколений, используя  передовые технологии и вклад лучших специалистов.
+                  br
+                  span Мы делаем доступными лучшие товары ежедневного спроса,  безупречно выполняя свою работу, питаем энергию людей для  ежедневных свершений. Удовлетворяя базовые потребности, открываем  неограниченные возможности
+                p.art_inner-article__paragraph.art_inner-article__paragraph--accent Ответственность перед людьми – главное условие процветания компании. Ценность, которую мы создаём, возвращается в виде высокого дохода и успеха наших сотрудников и партнёров.
+              .art_inner-article__galery.art_inner-article__galery--mission.art_inner-article-bunner
+                img(src="assets/img/article-1/img-12.svg",alt="img").art_inner-article-bunner__img
+                .art_inner-article-bunner__img.art_inner-article-bunner__img--chif
+                .art_inner-article-bunner__title Создаем достойное будущее с лидерами 
+                .art_inner-article-bunner__text Мы развиваем регионы, в которых работаем, повышая уровень жизни каждого жителя, используя вклад лучших специалистов, современные технологии, мировой опыт лидеров, предоставляя только качественные товары повседневного спроса, оказывая высокий уровень сервиса нашим клиентам и партнерам, а также развивая и повышая профессионализм наших сотрудников.
+                .art_inner-article-bunner__signature 
+                  p Управляющий «AP Trade»
+                  p Владимиров Юрий Михайлович 
+            
+            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+              h2.art_inner-article__title.art_title.art_inner-article__title--mission Стратегия компании
+              .art_inner-article__right.art_inner-article__right--mission
+                p.art_inner-article__paragraph.art_inner-article__paragraph--strategy Мы – лидер среди дистрибьюторов России на территории Урала, Сибири и Дальнего Востока, крупный холдинг с выдающимися компетенциями и лучшими людьми, высоким уровнем диверсификации бизнеса и самоокупаемыми функциональными единицами, обладающий эффектом синергии и единым центром финансовых инвестиций 
+              .art_inner-article__galery.art_inner-article__galery--mission.art_inner-article-photos
+                .art_inner-article-photos__photo.art_inner-article-photos__photo--1
+                .art_inner-article-photos__photo.art_inner-article-photos__photo--2
+            
+            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+              h2.art_inner-article__title.art_title.art_inner-article__title--mission Наши ценности
+              .art_inner-article__right.art_inner-article__right--mission
+                p.art_inner-article__paragraph.art_inner-article__paragraph--strategy Ценности АР Трейд отражают наше отношение к работе и жизни. Благодаря им, мы поддерживаем уникальность и культуру нашей компании
+
+              ul.art_inner-article__galery.art_inner-article__galery--mission.art_inner-article-bunners
+                - 
                   items = [
-                      { title: "История развития ", src:"assets/img/vidget/img-5.svg"},
-                      { title: "Миссия компании ", src:"assets/img/vidget/img-6.svg"},
-                      { title: "Стратегия компании ", src:"assets/img/vidget/img-7.svg"},
-                      { title: "Наши ценности ", src:"assets/img/vidget/img-8.svg"},
-                      { title: "Манифест ", src:"assets/img/vidget/img-10.svg"},
-                      { title: "Команда ", src:"assets/img/vidget/img-3.svg"},
-                      { title: "Партнерство ", src:"assets/img/vidget/img-4.svg"},
-                      { title: "Компания ", src:"assets/img/vidget/img-2.svg"},
+
+                      { title: "Счастливые люди ", url:"assets/img/article-2/img-13.svg"},
+                      { title: "Партнерство и командная работа ", url:"assets/img/article-2/img-1.svg"},
+                      { title: "Инициативность и новые идеи ", url:"assets/img/article-2/img-3.svg"},
+                      { title: "Качество ", url:"assets/img/article-2/img-2.svg"},
+                      { title: "Честность и открытость ", url:"assets/img/article-2/img-4.svg"},
+                      { title: "Полная отдача ", url:"assets/img/article-2/img-5.svg"},
+                      { title: "Доверие и открытость ", url:"assets/img/article-2/img-6.svg"},
+                      { title: "Непрерывное развитие ", url:"assets/img/article-2/img-8.svg"},
+                      { title: "Ответственность ", url:"assets/img/article-2/img-10.svg"},
+                      { title: "Эффективность ", url:"assets/img/article-2/img-14.svg"},
                     ]
-  
-              each item in items
-                li.art_inner-vidget__item.art_inner-vidget-item
-                  a(href="#!").art_inner-vidget-item__link
-                    .art_inner-vidget-item__title=item.title
-                    img(src=item.src ,alt="img").art_inner-vidget-item__icon
+
+                each item in items
+                  li.art_inner-article-bunners__bunner.article-bunner
+                    img(src=item.url,alt="img").article-bunner__img
+                    .article-bunner__title=item.title
+
+            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+              h2.art_inner-article__title.art_title.art_inner-article__title--mission Манифест
+              .art_inner-article__body
+                .art_inner-article__right.art_inner-article__right--mission.art_inner-article__right--manifest.scroll-block
+                  p.art_inner-article__paragraph  Компания отпраздновала свой 20-летний юбилей. Было приглашено более 200 человек, среди которых были партнеры компании и лучшие сотрудники со всех филиалов. Был запущен ребрендинг компании: был утвержден новый логотип, сформулирована новая миссия и ценности компании. 
+                  h3.art_inner-article__sub-title.art_title-6.art_inner-article__sub-title--manifest Пункт 3.0 Манифеста компании
+                  p.art_inner-article__paragraph.art_inner-article__paragraph--manifest Мы развиваем регионы, в которых работаем, повышая уровень жизни каждого жителя, используя вклад лучших специалистов, современные технологии, мировой опыт лидеров, предоставляя только качественные товары повседневного спроса, оказывая высокий уровень сервиса нашим клиентам и партнерам, а также развивая и повышая профессионализм наших сотрудников.
+                  p.art_inner-article__paragraph  Мы не стоим на месте, всегда идем в ногу со временем и ищем новые пути для достижения результата. Всё, что мы делаем, мы делаем качественно. Мы гордимся тем, что и как мы делаем.
+                  p.art_inner-article__paragraph  Компания отпраздновала свой 20-летний юбилей. Было приглашено более 200 человек, среди которых были партнеры компании и лучшие сотрудники со всех филиалов. Был запущен ребрендинг компании: был утвержден новый логотип, сформулирована новая миссия и ценности компании. 
+                  h3.art_inner-article__sub-title.art_title-6.art_inner-article__sub-title--manifest Пункт 3.0 Манифеста компании
+                  p.art_inner-article__paragraph.art_inner-article__paragraph--manifest Мы развиваем регионы, в которых работаем, повышая уровень жизни каждого жителя, используя вклад лучших специалистов, современные технологии, мировой опыт лидеров, предоставляя только качественные товары повседневного спроса, оказывая высокий уровень сервиса нашим клиентам и партнерам, а также развивая и повышая профессионализм наших сотрудников.
+                  p.art_inner-article__paragraph  Мы не стоим на месте, всегда идем в ногу со временем и ищем новые пути для достижения результата. Всё, что мы делаем, мы делаем качественно. Мы гордимся тем, что и как мы делаем.
+           
+            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+              h2.art_inner-article__title.art_title.art_inner-article__title--mission Команда
+              .art_inner-article__right.art_inner-article__right--mission
+              ul.art_inner-article__galery.art_inner-article__galery--mission.art_inner-article-bunners.art_inner-article-bunners--values
+                - 
+                  items = [
+
+                      { title: "компания людей ", url:"assets/img/article-3/img-5.svg", text:"У нас, как у любой бизнес-организации, есть цель – иметь коммерческий успех. Но приоритетом  компании всегда были люди: сотрудники, партнёры, клиенты. Эй-Пи Трейд – это компания людей, и мы помним об этом,  принимая решения."},
+                      { title: "ЭФФЕКТИВНОСТЬ ", url:"assets/img/article-3/img-1.svg", text:"Мы не будем следить за тем, что ты делаешь на рабочем месте. Посмотреть котиков на ютюбе может  каждый, но нам важен эффективный результат. Всегда соотноси ресурсы, время и качество. Мы – лига достигаторов, и мы этим  гордимся. За нашими достижениями следят партнёры, конкуренты и твоя мама. Покажи, как много ты можешь!"},
+                      { title: "ТЫ МОЖЕШЬ!", url:"assets/img/article-3/img-6.svg", text:"Мы верим в силу человеческих возможностей, создаём условия для постоянного саморазвития и  профессионального роста. В компании у каждого есть равные шансы достичь высот. Если ты говоришь, что ты что-то можешь,  то ты прав, и мы поддержим тебя в этом. И, кстати, делать ошибки и сомневаться ты тоже можешь: мы все – люди.Но мы не будем переубеждать, когда услышим “не могу”, зная, что ты даже не попробовал найти решение. Или когда ошибка  повторяется вновь и вновь без внятных причин. Такое “не могу” будет прелюдией к прощанию."},
+                      { title: "ВЛИВАЙСЯ ЛЕГКО!", url:"assets/img/article-3/img-4.svg", text:"Мы сделаем всё, чтобы твоё погружение в наш мир было лёгким, без стресса и запомнилось на всю жизнь.Мы тебя не бросим, подскажем и направим. Рассчитывай на нас и силу современных технологий!"}, 
+                      { title: "доверие и открытость ", url:"assets/img/article-3/img-7.svg", text:"Мы не скрываем друг от друга то, что может быть полезно для решения общих задач. Мы не врём  друг другу, даже если стыдно признать свой косяк. Мы открыты друг перед другом и партнёрами, и поэтому у нас всё  получается. Мы тебе честно скажем, что ты молодец и получаешь повышение, но также честно скажем, что ты не прав, и  объясним, почему нам нужно расстаться. Такая открытость помогает нам не буксовать и собирать команду лучших."},
+                      { title: "ОТВЕТСТВЕННОСТЬ", url:"assets/img/article-3/img-8.svg", text:"Мы делаем на совесть, даже когда никто не видит. Если у тебя нет ответственности за своё дело, то у  компании не будет ответственности перед тобой."},
+                      { title: "ЛИДЕР", url:"assets/img/article-3/img-3.svg", text:"Так мы называем не только руководителей департаментов и направлений. Если ты готов вести за собой, быть  примером, разделять с командой вдохновение, ответственность и результаты, ты – безусловный лидер. Эй-Пи Трейд – это не  компания, слепо идущая за главным. Мы ведём и поддерживаем друг друга ради общей цели. Мы – команда лидеров."},
+                      { title: "НАСТАВНИК", url:"assets/img/article-3/img-2.svg", text:"Оглянись – и ты увидишь вокруг своих коллег. Каждый из них может стать твоим наставником, просто попроси  его об этом. И для каждого, кому это нужно, стань наставником! В нашей культуре – радость делиться и отдавать."},
+                    ]
+
+                each item in items
+                  li.art_inner-article-bunners__bunner.art_inner-article-bunners__bunner--values.article-bunner
+                    img(src=item.url,alt="img").article-bunner__img.article-bunner__img--values
+                    .article-bunner__title.article-bunner__title--values=item.title
+                    .article-bunner__text.article-bunner__text--values=item.text
+           
+           
+            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+              h2.art_inner-article__title.art_title.art_inner-article__title--mission Партнерство
+              .art_inner-article__right.art_inner-article__right--mission
+              ul.art_inner-article__galery.art_inner-article__galery--mission.art_inner-article-bunners.art_inner-article-bunners--part
+                - 
+                  items = [
+
+                      { title: "МАЯТНИК УЛУЧШЕНИЙ ", url:"assets/img/article-4/img-4.svg", text:"Нельзя стать совершенным и поставить точку. Каждый день мы думаем, как сделать себя и  соседа рядом лучше, чем вчера. Совершенствуйся сам и заряжай своим примером команду."},
+                      
+                      { title: "ЕСТЬ ИДЕЯ!", url:"assets/img/article-4/img-2.svg", text:"Именно это мы хотим услышать от тебя, когда ты посчитаешь что-то несовершенным или несправедливым в  нашей компании и придумаешь, как это исправить. Идеи приносят нам инновации, а инновации – лидерство на рынке."},
+                      { title: "СИНЕРГИЯ ", url:"assets/img/article-4/img-3.svg", text:"Одна голова хорошо, а две лучше – это не просто пословица, а наш стиль. Когда мы работаем вместе, когда  объединяем сильные стороны нас и наших партнёров, то получаем сверхрезультаты. Ты должен этого хотеть так же, как  хочешь полететь отдыхать на Бали."},
+                      { title: "НАМ НЕ ВСЁ РАВНО", url:"assets/img/article-4/img-1.svg", text:"Наша компания сразу строилась с этим принципом. Мы поддерживаем своих людей в трудной  ситуации, мы помогаем в непростые времена и своим партнёрам. Уверены, что, если ты с нами, ты неравнодушен."}, 
+                    ]
+
+                each item in items
+                  li.art_inner-article-bunners__bunner.art_inner-article-bunners__bunner--part.article-bunner
+                    img(src=item.url,alt="img").article-bunner__img.article-bunner__img--part
+                    .article-bunner__title.article-bunner__title--values.article-bunner__title--part=item.title
+                    .article-bunner__text.article-bunner__text--values=item.text
+            
+            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+              h2.art_inner-article__title.art_title.art_inner-article__title--mission Компания
+              .art_inner-article__right.art_inner-article__right--mission
+              ul.art_inner-article__galery.art_inner-article__galery--mission.art_inner-article-bunners.art_inner-article-bunners--company
+                - 
+                  items = [
+
+                      { title: "SEO ", url:"assets/img/article-5/img-6.svg", text:"Если наш CEO что-то пообещал, то держит своё слово. И вся команда следует его примеру."},
+                      
+                      { title: "География", url:"assets/img/article-5/img-1.svg", text:"Мы живём и работаем на 2/3 России – это территория больше Австралии и Франции вместе взятых. Нас связывает  8 часовых поясов, и в любом городе нашего присутствия ты будешь чувствовать себя частью AP Trade."},
+                      { title: "Инновации ", url:"assets/img/article-5/img-2.svg", text:"Если что-то произошло в мире, а мы об этом не знаем, то мы стоим на месте. Скажи нам, и мы сразу внедрим нужное."},
+                      { title: "Дресс-код", url:"assets/img/article-5/img-3.svg", text:"Однажды мы ходили в пиджаках, и нам было круто. Сейчас мы ходим в соответствии со случаем и получаем  удовольствие от самих себя. А ещё у нас можно и нужно делать своё рабочее место таким, каким ты его хочешь видеть. Хочешь  цветок, фотографию бабушки и хеви-метал в наушниках – мы не против, если есть результат."}, 
+                      { title: "MUDA", url:"assets/img/article-5/img-4.svg", text:"С японского означает любую деятельность, которая сжирает ресурсы, но не добавляет ценности и вредит бизнес-процессам. Люди, которые создают муду, бывают разные и по-разному себя проявляют. Мы стараемся таких не брать на  работу и быстро с ними расстаёмся."}, 
+                      { title: "Давай на ты", url:"assets/img/article-5/img-5.svg", text:"Мы обращаемся по имени и на «ты». При этом уважаем личность в каждом и не допускаем фамильярности."}, 
+                    ]
+
+                each item in items
+                  li.art_inner-article-bunners__bunner.art_inner-article-bunners__bunner--company.article-bunner
+                    img(src=item.url,alt="img").article-bunner__img.article-bunner__img--company
+                    .article-bunner__title.article-bunner__title--company=item.title
+                    .article-bunner__text.article-bunner__text--company=item.text
+          
+          
+          include vidget

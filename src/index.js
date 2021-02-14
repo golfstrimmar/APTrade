@@ -25,9 +25,9 @@ import './js/common'
 
 // slick;
 // import "slick-carousel";
-// import "./js/slick.js";  <-- на всякий случай
-// import "./js/mySlick.js";
-// import './css/slick.css';
+import "./js/slick.js";  
+import "./js/mySlick.js";
+import './css/slick.css';
 
 // import "./js/plyr.js";
 import './css/fonts.css'
@@ -45,3 +45,6 @@ import './sass/style.sass';
 
 import "./js/tabs";
 import "./js/modal";
+
+
+

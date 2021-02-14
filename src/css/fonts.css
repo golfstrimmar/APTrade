@@ -98,9 +98,6 @@ font-stretch: normal;
 .icon-check:before {
   content: "\e90b";
 }
-.icon-arrow-right:before {
-  content: "\e90c";
-}
 .icon-chevron-down:before {
   content: "\e90d";
 }
@@ -134,6 +131,12 @@ font-stretch: normal;
 .icon-play_arrow:before {
   content: "\e919";
 }
+.icon-arrow-left:before {
+  content: "\e90c";
+}
+.icon-arrow-right:before {
+  content: "\e91a";
+}
 .icon-phone:before {
   content: "\e942";
 }
@@ -153,5 +156,6 @@ font-stretch: normal;
   content: "\e9d9";
 }
 .icon-email:before {
-  content: "\e91a";
+  content: "\e91b";
 }
+
