@@ -22,9 +22,9 @@ import './js/common'
 // import "bootstrap/js/dist/button";
 // import "bootstrap/js/dist/collapse";
 
-
 // slick;
 // import "slick-carousel";
+import "./js/jquery.nicescroll.min";  
 import "./js/slick.js";  
 import "./js/mySlick.js";
 import './css/slick.css';
@@ -48,3 +48,17 @@ import "./js/modal";
 
 
 
+ $(document).ready(function () {
+   var nice = $("html").niceScroll(); // The document page (body)
+
+   $(".scroll-block").html($(".scroll-block").html() + " ");
+
+   $(".scroll-block").niceScroll({
+     cursorborder: "",
+     cursorcolor: "#29A7DC",
+     boxzoom: true,
+   }); // First scrollable DIV
+
+ });
+
+ 

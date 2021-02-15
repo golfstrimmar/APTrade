@@ -669,7 +669,7 @@
   // width:
   // height:
   // flex: 0 1 100%
-  // margin: 0 0 0 0
+  margin: 10px 0 20px 0
   // padding: 0 0 0 0
   // position: relative
   // display: none
@@ -697,6 +697,7 @@
   // height:
   // flex: 0 1 100%
   // margin: 0 0 0 0
+
   padding: 20px
   // position: relative
   // display: none
@@ -748,16 +749,74 @@
     // padding: 0 0 0 0
 //-------------
 
+
+
+// слайдер ------------------
+.slider__body--article-slider
+  // +alic
+  // +jucs
+  // +jucb
+  max-width: calc(100vw -428px)
+  min-height: 173px
+
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // display: none
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
 //-------------
 //------.article-slider__item--------
 .article-slider__item
   // +alic
-  // +jucs
+  
+  text-align: center
   // +jucb
   // width:
-  // height:
+  height:173px
   // flex: 0 1 100%
-  margin: 0 15px
+  // margin: 0 7px
+  max-width: 200px
+  padding: 20px
+  // position: relative
+  // display: none
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  // +bg(red)
+  background: $bg
+  border-radius: 6px
+  // +border(1px, blue)
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.article-slider-item__img--------
+.article-slider-item__img
+  // +alic
+  // +jucs
+  // +jucb
+  width: 44px
+  height: 43px
+  // flex: 0 1 100%
+  margin: 0 auto
   // padding: 0 0 0 0
   // position: relative
   // display: none
@@ -767,8 +826,6 @@
   // grid-template-rows:
   // grid-template-areas:
   // grid-area:
-  +bg(red)
-  +border(1px, blue)
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -784,6 +841,35 @@
   // +jucs
   // +jucb
   // width:
+  height: auto !important
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 15px 0 5px 0
+  // position: relative
+  // display: none
+  display: block
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  line-height: 20px
+  color: #4A4A4A
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.article-slider-item__text--------
+.article-slider-item__text
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
   // height:
   // flex: 0 1 100%
   // margin: 0 0 0 0
@@ -796,6 +882,9 @@
   // grid-template-rows:
   // grid-template-areas:
   // grid-area:
+  font-weight: normal
+  font-size: 13px
+  line-height: 18px
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -805,14 +894,44 @@
     // margin: 0 0 0 0
     // padding: 0 0 0 0
 //-------------
+//------slider__arrow_next--1--------
+.slider__arrow_next--1
+  right: 4px
+.slider__arrow_prev--1
+  left: 4px
+//-------------
+
+//------.slider__arrow--mission--------
+.slider__arrow--mission
+  // background: rgba(41,167,220,  .6)!important
+  background: white!important
+  color: #818B9A
+  font-size: 20px
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+
+
+
+
+
+
+
 //------.art_inner-article__slider--------
 .art_inner-article__slider
   // +alic
   // +jucs
   // +jucb
-  min-height:200px
+  min-height: 173px
   // flex: 0 1 100%
-  // margin: 0 0 0 0
+  margin: 20px 0 0 0
   // padding: 0 0 0 0
   // position: relative
   // display: none
@@ -831,30 +950,7 @@
     // padding: 0 0 0 0
 //-------------
 //------.slider__body--article-slider--------
-.slider__body--article-slider
-  // +alic
-  // +jucs
-  // +jucb
-  // max-width: 73vw
-  min-height: 200px
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+
 //-------------
 //------.art_inner-article-info__text--------
 .art_inner-article-info__text
@@ -1107,7 +1203,7 @@
   // +alic
   // +jucs
   // +jucb
-  // width:
+  width:100%
   // height:
   // flex: 0 1 100%
   // margin: 0 0 0 0
@@ -1202,14 +1298,8 @@
   // grid-template-rows:
   // grid-template-areas:
   // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+  
+  
 //-------------
 //------.art_inner-content__article--mission--------
 .art_inner-content__article--mission
@@ -1571,14 +1661,13 @@
   grid-gap: 20px
   // grid-template-areas:
   // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+  @media (max-width: 1450px)
+    grid-template-columns: repeat(3,1fr)
+    grid-template-rows: repeat(4,1fr)
+
+  @media (max-width: 1200px)
+    grid-template-columns: repeat(2,1fr)
+    grid-template-rows: repeat(5,1fr)
 //-------------
 
 //-------------
@@ -1869,20 +1958,25 @@
 .art_inner-article-bunners--part
   margin: 8px 0 0 0
   display: grid
-  grid-template-columns: repeat( 2,1fr)
-  grid-template-rows: repeat( 2,1fr)
+  grid-template-columns: repeat( 2,1fr)!important
+  grid-template-rows: repeat( 2,1fr)!important
   grid-column-gap: 15px
   grid-row-gap: 30px
   margin: 30px 20px 0
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+ 
 //-------------
+
+.art_inner-article-bunners--company
+  grid-template-columns: repeat(2,1fr) !important
+  grid-template-rows: repeat(2,1fr) !important
+
+
+
+
+
+
+
+
 //------.art_inner-article-bunners__bunner--part--------
 .art_inner-article-bunners__bunner--part
   // +alic

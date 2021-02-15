@@ -1,4 +1,38 @@
+
+
+//- .slider.slider__slider
+//-                   .slider__arrows
+//-                     i.slider__arrow.slider__arrow_prev.slider__arrow_prev--1.icon-chevron-left
+//-                     i.slider__arrow.slider__arrow_next.slider__arrow_next--1.icon-chevron-right
+//-                   ul.slider__body.slider__body--article-slider.slider-js-1
+//-                     - 
+//-                       slides = [
+//-                           {title:"Лучший запуск"},
+//-                            {title:"Прорыв года"},
+//-                            {title:"HR проект года"},
+//-                            {title:"IT прорыв года"},
+//-                            {title:"Лучший финансовый анализ"},
+//-                           {title:"Лучший запуск"},
+//-                           {title:"Прорыв года"},
+//-                            {title:"HR проект года"},
+//-                            {title:"IT прорыв года"},
+//-                            {title:"Лучший финансовый анализ"}
+//-                           ]
+//-                     each item in slides
+//-                        li.slider__item.article-slider__item.article-slider-item
+//-                          .article-slider-item__title=item.title
+
+
+
+
+
+
+
+
+
+
 main#art_inner.art_inner
+
     .art_container
         h1.art_inner__title.art_title-main  О компании
         .art_inner__wrapper
@@ -64,27 +98,30 @@ main#art_inner.art_inner
                   .art_inner-article-info__title  Заключены контракты с Bridgestone, Nokian Tyres, “АЮСС-Лоджистик”, KYB, Idemitsu
 
                 h3.art_inner-article__sub-title.art_title-2.art_inner-article__sub-title--mission Награды
-                //- .art_inner-article__slider.slider.slider__slider.article-slider
-                //-   .slider__arrows
-                //-     i.slider__arrow.slider__arrow_prev.slider__arrow_prev--1.icon-chevron-left
-                //-     i.slider__arrow.slider__arrow_next.slider__arrow_next--1.icon-chevron-right
-                //-   ul.slider__body.slider__body--article-slider.slider-js-1
-                //-     - 
-                //-       slides = [
-                //-           {title:"Лучший запуск"},
-                //-            {title:"Прорыв года"},
-                //-            {title:"HR проект года"},
-                //-            {title:"IT прорыв года"},
-                //-            {title:"Лучший финансовый анализ"},
-                //-           {title:"Лучший запуск"},
-                //-           {title:"Прорыв года"},
-                //-            {title:"HR проект года"},
-                //-            {title:"IT прорыв года"},
-                //-            {title:"Лучший финансовый анализ"}
-                //-           ]
-                //-     each item in slides
-                //-        li.slider__item.article-slider__item.article-slider-item
-                //-          .article-slider-item__title=item.title
+                .art_inner-article__slider.slider.slider__slider.article-slider
+                  .slider__arrows
+                    i.slider__arrow.slider__arrow--mission.slider__arrow_prev.slider__arrow_prev--1.icon-chevron-left
+                    i.slider__arrow.slider__arrow--mission.slider__arrow_next.slider__arrow_next--1.icon-chevron-right
+                  ul.slider__body.slider-js-1.slider__body--article-slider
+                    - 
+                      slides = [
+                          {title:"Лучший запуск", img:"assets/img/article-6/img-5.svg", text:"стратегических мультифункциональных проектов"},
+                          {title:"Прорыв года",img:"assets/img/article-6/img-1.svg", text:"P&G, 2015/2016"},
+                          {title:"HR проект года",img:"assets/img/article-6/img-2.svg", text:"P&G, 2015/2016"},
+                          {title:"IT прорыв года",img:"assets/img/article-6/img-6.svg", text:"P&G, 2015"},
+                          {title:"Лучший финансовый анализ",img:"assets/img/article-6/img-4.svg", text:"P&G, 2015"},
+                          {title:"Лучший запуск", img:"assets/img/article-6/img-5.svg", text:"стратегических мультифункциональных проектов"},
+                          {title:"Прорыв года",img:"assets/img/article-6/img-1.svg", text:"P&G, 2015/2016"},
+                          {title:"HR проект года",img:"assets/img/article-6/img-2.svg", text:"P&G, 2015/2016"},
+                          {title:"IT прорыв года",img:"assets/img/article-6/img-6.svg", text:"P&G, 2015"},
+                          {title:"Лучший финансовый анализ",img:"assets/img/article-6/img-4.svg", text:"P&G, 2015"},
+                      
+                          ]
+                    each item in slides
+                      li.slider__item.article-slider__item.article-slider-item
+                        img(src=item.img,alt="img").article-slider-item__img
+                        .article-slider-item__title=item.title
+                        .article-slider-item__text=item.text
 
 
 
