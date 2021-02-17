@@ -1,43 +1,14 @@
 
 
-//- .slider.slider__slider
-//-                   .slider__arrows
-//-                     i.slider__arrow.slider__arrow_prev.slider__arrow_prev--1.icon-chevron-left
-//-                     i.slider__arrow.slider__arrow_next.slider__arrow_next--1.icon-chevron-right
-//-                   ul.slider__body.slider__body--article-slider.slider-js-1
-//-                     - 
-//-                       slides = [
-//-                           {title:"Лучший запуск"},
-//-                            {title:"Прорыв года"},
-//-                            {title:"HR проект года"},
-//-                            {title:"IT прорыв года"},
-//-                            {title:"Лучший финансовый анализ"},
-//-                           {title:"Лучший запуск"},
-//-                           {title:"Прорыв года"},
-//-                            {title:"HR проект года"},
-//-                            {title:"IT прорыв года"},
-//-                            {title:"Лучший финансовый анализ"}
-//-                           ]
-//-                     each item in slides
-//-                        li.slider__item.article-slider__item.article-slider-item
-//-                          .article-slider-item__title=item.title
-
-
-
-
-
-
-
-
-
-
 main#art_inner.art_inner
 
     .art_container
-        h1.art_inner__title.art_title-main  О компании
+
+        //- h1.art_inner__title.art_title-main  О компании
         .art_inner__wrapper
           section.art_inner__content.art_inner-content
-            article.art_inner-content__article.art_board.art_inner-article
+
+            article#today.art_inner-content__article.art_board.art_inner-article
               h2.art_inner-article__title.art_title компания сегодня
               .art_inner-article__img
               .art_inner-article__right
@@ -56,46 +27,45 @@ main#art_inner.art_inner
                     a(href="#!" rel="slide-3-popup").art_inner-article-galery__play.popup-init-js
                   .art_inner-article-galery__img
                     a(href="#!" rel="slide-4-popup").art_inner-article-galery__play.popup-init-js
-          
- 
             
-            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+            article#history.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
               h2.art_inner-article__title.art_title.art_inner-article__title--mission История развития
               .art_inner-article__right.art_inner-article__right--mission
                 p.art_inner-article__paragraph  История АР Трейд создается совместными усилиями наших сотрудников, клиентов и партнеров.  Каждый человек, каждая высказанная идея и каждое решение, воплощенное в жизнь, способствуют нашему общему делу. 
-                ul.art_inner-article__data.art_inner-article-data
-                  li.art_inner-article-data__item.art_article-data-item
-                      a(href="#!").art_article-data-item__link
-                        i.icon-arrow-left  
-                  - 
-                    items = [
-                        { title: "2017", },
-                        { title: "2017", },
-                        { title: "2016", },
-                        { title: "2015", },
-                        { title: "2014", },
-                        { title: "2013", },
-                        { title: "2012", },
-                        { title: "2011", },
-                        { title: "2010", },
-                        { title: "2009", },
-                        { title: "2008", },
-                        { title: "2007", },
-                        { title: "2006", },
-                        { title: "2005", },
-                        { title: "2004", },
-                        { title: "2003", },
-                      ]
-                  each item in items
-                    li.art_inner-article-data__item.art_article-data-item
-                      a(href="#!").art_article-data-item__link=item.title
-                  li.art_inner-article-data__item.art_article-data-item
-                      a(href="#!").art_article-data-item__link
-                        i.icon-arrow-right  
-                .art_inner-article__info.art_inner-article-info
-                  .art_inner-article-info__title Заключен контракт с Jacobs
-                  .art_inner-article-info__text Дистрибуция в Хабаровске, Благовещенске, Комсомольске-на-Амуре, Камчатке
-                  .art_inner-article-info__title  Заключены контракты с Bridgestone, Nokian Tyres, “АЮСС-Лоджистик”, KYB, Idemitsu
+                
+                .art_inner-article__data.art_inner-article-data
+                  .slider.slider__slider.slider__slider--history
+                      .slider__arrows.slider__arrows--history
+                        i.slider__arrow.slider__arrow--history.slider__arrow_prev.slider__arrow_prev--history.slider__arrow_prev--2.icon-arrow-left
+                        i.slider__arrow.slider__arrow--history.slider__arrow_next.slider__arrow_next--history.slider__arrow_next--2.icon-arrow-right
+
+                        
+                        
+                      ul.slider__body.slider-js-2
+                        - 
+                          items = [
+                              { title: "2017", },
+                              { title: "2016", },
+                              { title: "2015", },
+                              { title: "2014", },
+                              { title: "2013", },
+                              { title: "2012", },
+                              { title: "2011", },
+                              { title: "2010", },
+                              { title: "2009", },
+                              { title: "2008", },
+                              { title: "2007", },
+                              { title: "2006", },
+                              { title: "2005", },
+                              { title: "2004", },
+                              { title: "2003", },
+                            ]
+                        each item in items
+                          li.art_inner-article-data__item.art_article-data-item
+                            .art_inner-article-info
+                              .art_inner-article-info__title Заключен контракт с Jacobs
+                              .art_inner-article-info__text Дистрибуция в Хабаровске, Благовещенске, Комсомольске-на-Амуре, Камчатке
+                              .art_inner-article-info__title  Заключены контракты с Bridgestone, Nokian Tyres, “АЮСС-Лоджистик”, KYB, Idemitsu
 
                 h3.art_inner-article__sub-title.art_title-2.art_inner-article__sub-title--mission Награды
                 .art_inner-article__slider.slider.slider__slider.article-slider
@@ -123,10 +93,7 @@ main#art_inner.art_inner
                         .article-slider-item__title=item.title
                         .article-slider-item__text=item.text
 
-
-
-
-            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+            article#mission.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
               h2.art_inner-article__title.art_title.art_inner-article__title--mission Миссия компании
               .art_inner-article__right.art_inner-article__right--mission
                 h3.art_inner-article__sub-title.art_title-2.art_inner-article__sub-title--mission Создаем достойное будущее с лидерами
@@ -144,7 +111,7 @@ main#art_inner.art_inner
                   p Управляющий «AP Trade»
                   p Владимиров Юрий Михайлович 
             
-            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+            article#strategy.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
               h2.art_inner-article__title.art_title.art_inner-article__title--mission Стратегия компании
               .art_inner-article__right.art_inner-article__right--mission
                 p.art_inner-article__paragraph.art_inner-article__paragraph--strategy Мы – лидер среди дистрибьюторов России на территории Урала, Сибири и Дальнего Востока, крупный холдинг с выдающимися компетенциями и лучшими людьми, высоким уровнем диверсификации бизнеса и самоокупаемыми функциональными единицами, обладающий эффектом синергии и единым центром финансовых инвестиций 
@@ -152,7 +119,7 @@ main#art_inner.art_inner
                 .art_inner-article-photos__photo.art_inner-article-photos__photo--1
                 .art_inner-article-photos__photo.art_inner-article-photos__photo--2
             
-            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+            article#values.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
               h2.art_inner-article__title.art_title.art_inner-article__title--mission Наши ценности
               .art_inner-article__right.art_inner-article__right--mission
                 p.art_inner-article__paragraph.art_inner-article__paragraph--strategy Ценности АР Трейд отражают наше отношение к работе и жизни. Благодаря им, мы поддерживаем уникальность и культуру нашей компании
@@ -178,7 +145,7 @@ main#art_inner.art_inner
                     img(src=item.url,alt="img").article-bunner__img
                     .article-bunner__title=item.title
 
-            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+            article#manifest.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
               h2.art_inner-article__title.art_title.art_inner-article__title--mission Манифест
               .art_inner-article__body
                 .art_inner-article__right.art_inner-article__right--mission.art_inner-article__right--manifest.scroll-block
@@ -191,7 +158,7 @@ main#art_inner.art_inner
                   p.art_inner-article__paragraph.art_inner-article__paragraph--manifest Мы развиваем регионы, в которых работаем, повышая уровень жизни каждого жителя, используя вклад лучших специалистов, современные технологии, мировой опыт лидеров, предоставляя только качественные товары повседневного спроса, оказывая высокий уровень сервиса нашим клиентам и партнерам, а также развивая и повышая профессионализм наших сотрудников.
                   p.art_inner-article__paragraph  Мы не стоим на месте, всегда идем в ногу со временем и ищем новые пути для достижения результата. Всё, что мы делаем, мы делаем качественно. Мы гордимся тем, что и как мы делаем.
            
-            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+            article#team.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
               h2.art_inner-article__title.art_title.art_inner-article__title--mission Команда
               .art_inner-article__right.art_inner-article__right--mission
               ul.art_inner-article__galery.art_inner-article__galery--mission.art_inner-article-bunners.art_inner-article-bunners--values
@@ -214,8 +181,7 @@ main#art_inner.art_inner
                     .article-bunner__title.article-bunner__title--values=item.title
                     .article-bunner__text.article-bunner__text--values=item.text
            
-           
-            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+            article#partnership.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
               h2.art_inner-article__title.art_title.art_inner-article__title--mission Партнерство
               .art_inner-article__right.art_inner-article__right--mission
               ul.art_inner-article__galery.art_inner-article__galery--mission.art_inner-article-bunners.art_inner-article-bunners--part
@@ -235,7 +201,7 @@ main#art_inner.art_inner
                     .article-bunner__title.article-bunner__title--values.article-bunner__title--part=item.title
                     .article-bunner__text.article-bunner__text--values=item.text
             
-            article.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
+            article#company.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
               h2.art_inner-article__title.art_title.art_inner-article__title--mission Компания
               .art_inner-article__right.art_inner-article__right--mission
               ul.art_inner-article__galery.art_inner-article__galery--mission.art_inner-article-bunners.art_inner-article-bunners--company

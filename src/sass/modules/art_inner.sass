@@ -1,4 +1,36 @@
 
+//------.art_inner__title--------
+.art_inner__title
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 18px 20px
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+
+.art_inner
+  background: #F5F7F9
+  margin: -15px -15px -20px -15px
 
 
 //------.art_inner__wrapper--------
@@ -29,52 +61,25 @@
     // margin: 0 0 0 0
     // padding: 0 0 0 0
 //-------------
-
-
-
-//------.art_inner__title--------
-.art_inner__title
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  padding: 18px 20px
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
-  
-  
   
   //--------------
 .art_inner__content
   // +alic
   // +jucs
   // +jucb
-  // width:
+  // min-width: auto
   // height:
-  flex: 1 1 50%
-  // margin: 0 0 0 0
-  padding: 0 20px
+  // flex: 1 1 50%
+  flex-grow: 1
+  margin: 0 368px 0 0
+  // float: left
+  min-width: 0
+  // padding: 0 20px
+  padding: 0 0 26px 0	
   // position: relative
   // display: none
-  // display: flex
+  
+
   // display: grid
   // grid-template-columns:
   // grid-template-rows:
@@ -96,9 +101,11 @@
   // +jucs
   // +jucb
   width: 328px
+  transition: top 0.2s ease-in-out 
   // height:
   // flex: 0 1 100%
-  margin: 0 20px 0 0
+  // float: right
+  margin: 0 5px 0 0
   // padding: 0 0 0 0
   // position: relative
   // display: none
@@ -108,6 +115,11 @@
   // grid-template-rows:
   // grid-template-areas:
   // grid-area:
+  position: fixed
+  // top: 60px
+  right: 80px
+  z-index: 400
+  top:auto
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -136,6 +148,7 @@
   // grid-template-rows:
   // grid-template-areas:
   // grid-area:
+  min-width: 0
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -183,6 +196,7 @@
   grid-template-rows: auto 1fr 1fr auto auto
   grid-template-areas:  "title  title ""img right"". right" "galery-title galery-title" "galery galery"
   // grid-area:
+
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -268,6 +282,7 @@
   // grid-template-rows:
   // grid-template-areas:
   grid-area: right
+  
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -514,8 +529,9 @@
   // width:
   // height:
   // flex: 0 1 100%
-  // margin: 0 0 0 0
-  padding: 14px 20px
+  margin: 0 0 18px 0
+  // padding: 14px 20px
+  padding: 0 0 0 0	
   // position: relative
   // display: none
   // display: flex
@@ -524,7 +540,7 @@
   // grid-template-rows:
   // grid-template-areas:
   // grid-area:
-  background: #F5F7F9
+  // background: #F5F7F9
   border-radius: 6px
   @media (max-width: 1199px)
     // flex: 0 1 100%
@@ -756,9 +772,8 @@
   // +alic
   // +jucs
   // +jucb
-  max-width: calc(100vw -428px)
   min-height: 173px
-
+  // display: inline-block
   // margin: 0 0 0 0
   // padding: 0 0 0 0
   // display: none
@@ -919,7 +934,34 @@
 
 
 
-
+//------.slider__slider--history--------
+.slider__slider--history
+  // +alic
+  // +jucs
+  // +jucb
+  width:100%
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  min-height: auto
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
 
 
 
@@ -1159,6 +1201,10 @@
   // grid-area:
   +bg($bg)
   overflow: hidden
+  &:hover
+    cursor: pointer
+    +bg($active)
+    color: white
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -1186,9 +1232,7 @@
   // grid-template-rows:
   // grid-template-areas:
   // grid-area:
-  a
-    +bg($active)
-    color: white
+
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -1892,7 +1936,9 @@
   position: relative
   background: #F5F7F9
   border-radius: 6px
-  display: table
+  // display: table
+  +fdc
+  +alis
   margin: 0 0 20px 0
   break-inside: avoid 
 
@@ -2192,4 +2238,15 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
+//-------------
+
+
+
+//------nicescroll-cursors--------
+.nicescroll-cursors
+  width: 6px!important
+  // height: 109px!important
+  background: #29A7DC!important
+  border: none!important
+  border-radius: 4px!important
 //-------------
