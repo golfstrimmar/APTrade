@@ -3,7 +3,12 @@ section#modaL.modaL
       .popup__overlay
         .popup__inner
           i.icon-x.close-js
-          #player.player-1(data-plyr-provider='youtube' data-plyr-embed-id="bTqVqk7FSmY")
+          #player
+            video#player.player-1(poster='assets/img/article-1/img-1.webp' playsinline='' controls='')
+              source(src='assets/img/video-1.mp4' type='video/mp4')
+              source(src='assets/img/video-1.mp4' type='video/webm')
+              track(kind='captions' label='Английские субтитры' src='/path/to/captions.vtt' srclang='en' default='')
+  
   .popup.slide-2-popup
       .popup__overlay
         .popup__inner
