@@ -1,7 +1,7 @@
 
   
 .slider__slider 
-  min-height: 400px
+  // min-height: 400px
   
   
   
@@ -16,7 +16,7 @@
   // min-height: 400px
 
 .slider__item
-  max-width: 200px
+  // max-width: 200px
   // margin: 0 15px
   // border-top-left-radius: 10px
   // border-bottom-left-radius: 10px
@@ -78,6 +78,85 @@
 //     height: 38px
 //     border-radius: 10px
 //     background: rgba(24,24,24, .6)
+
+//------.slider-massages-js-1--------
+.slider-massages-js-1
+  .slick-dots li:not(.slick-active)
+      display: none
+  .slick-active
+      z-index: 2
+      display: inline-flex
+      +absolute( 60px, 38px, null, null, 25px,0,0)
+      bottom:  20px
+  .slick-dots-current
+      font-weight: normal
+      font-size: 14px
+      // color: $white
+      margin: 0 0 0 
+  .slick-dots-total
+      font-weight: normal
+      // color: $white
+      font-size: 14px
+      margin: 0 0 0 
+  .slick-dots-separator
+      // color: white
+      font-size: 15px
+      font-weight: normal
+      margin: 0 5px
+  .slick-dots-button
+      +center 
+      background: transparent
+      width: 60px
+      height: 38px
+      border-radius: 10px
+      position: relative
+      font-weight: bold
+      font-size: 14px
+      line-height: 18px
+      color: #818B9A
+      font-family: 'PT Sans', sans-serif
+  
+
+
+
+
+.slider__arrows--massages
+  bottom: 28px!important
+  transform: translate(0,0)
+  height: 20px
+  width: 60px
+  top: auto
+  left: auto !important
+  right :25px
+  z-index: 5
+
+.slider__arrow--massages
+    +absolute( auto, auto, 0, auto,  auto,0,0)
+    width: 20px!important
+    height: 20px!important
+    +bg(transparent!important)
+    font-size: 18px!important
+    color: #818B9A!important
+    z-index: 3
+    &:hover
+      cursor: pointer
+
+.slider__arrow_prev--massages
+  left:-8px
+.slider__arrow_next--massages
+  right:-8px
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

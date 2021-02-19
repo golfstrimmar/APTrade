@@ -119,6 +119,11 @@ module.exports = {
       template: "src/pug/pages/art_about.pug",
       filename: "./art_about.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/art_home.pug",
+      filename: "./art_home.html",
+    }),
 
     new CopyWebpackPlugin({
       patterns: [
