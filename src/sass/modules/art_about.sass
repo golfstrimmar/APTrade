@@ -243,3 +243,38 @@
   &.act
     z-index: 10000
     +absolute(100%,auto,60px,0,auto,0%,0%)
+
+
+.art_article-check 
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  padding: 20px
+  display: inline-flex
+  border: 1px solid #eef2f4
+  border-radius: 6px
+
+.art_inner-article__check 
+  margin: 20px 0 0
+
+
+
+.art_article-check__info
+  padding: 0 0 0 15px
+  position: relative
+  font-weight: 400
+  font-size: 12px
+  line-height: 24px
+  color: #a5adb3
+
+
+
+.art_article-check__info:after 
+  content: ""
+  background-color: #e5e5e5
+  position: absolute
+  width: 1px
+  height: 24px
+  top: 0
+  left: 0
+  z-index: 2
