@@ -4,10 +4,6 @@ main#art_inner-home.art_inner.art_inner--home
         .art_inner__wrapper.art_inner__wrapper--home
           section.art_inner__content.art_inner__content--home.art_inner-content  .art_inner-content
 
-
-
-
-
           aside.art_inner__vidget.art_inner__vidget--home.art_vidget-home
             section.art_vidget-home__massages.art_board.art_home-massages 
               .art_home-massages__top.art_title-top Важные сообщения
@@ -28,19 +24,25 @@ main#art_inner-home.art_inner.art_inner--home
                             ]
                           each item in slides
                             li.slider__item.slider__item--massages
-                                img.art-massages-slider__img(src="assets/img/home/img-1.webp",alt="img")
                                 .art_decor.art_decor--massages
-                                .art-massages-slider__title Надежда Пронина
-                                .art-massages-slider__text  Текст сообщения от пользователя в несколько строк
+                                .art-massages-slider__sheap 
+                                  .cheap
+                                    img.cheap__img(src="assets/img/home/img-1.webp",alt="img")
+                                    h5.cheap__title Надежда Пронина
+                                    p.cheap__text  Текст сообщения от пользователя в несколько строк
+
                                 button.btn.btn--empty(type='button').art-massages-slider__button  Прочитано
+            
+            
+            
             section.art_vidget-home__birthday.art_board.art_home-birthday
               .art_home-birthday__top.art_title-top Дни рождения
               ul.art_home-birthday__items
-                .art_home-birthday__item.art_home-birthday__item--active
-                                img.art_home-birthday__img(src="assets/img/home/img-1.webp",alt="img")
-                                .art_home-birthday__title Иван Петров
-                                .art_home-birthday__text  Сегодня
-                                
+                li.art_home-birthday__item.art_home-birthday__item--active
+                                .cheap
+                                  img.cheap__img(src="assets/img/home/img-1.webp",alt="img")
+                                  h5.cheap__title Иван Петров
+                                  p.cheap__text  Сегодня
                                 .art_home-birthday__img--birthday
                                   img(src="assets/img/home/img-2.svg",alt="img")
                 - 
@@ -52,21 +54,90 @@ main#art_inner-home.art_inner.art_inner--home
                     ]
                 
                 each item in items
-                  .art_home-birthday__item
-                                img.art_home-birthday__img(src="assets/img/home/img-1.webp",alt="img")
-                                .art_home-birthday__title=item.title
-                                .art_home-birthday__text=item.text   
-                                .art_home-birthday__img--birthday
-                                  img(src="assets/img/home/img-2.svg",alt="img")
-              
+                  li.art_home-birthday__item
+                      .cheap
+                          img.cheap__img(src="assets/img/home/img-1.webp",alt="img")
+                          h5.cheap__title=item.title
+                          p.cheap__text=item.text
+                      .art_home-birthday__img--birthday
+                        img(src="assets/img/home/img-2.svg",alt="img")
               .art_decor.art_decor--birthday
               button.btn.btn--empty(type='button').art_home-birthday__button  Показать больше
             
             section.art_vidget-home__events.art_board.art_home-events
               .art_home-events__top.art_title-top ближайшие события
+                a(href="#!").art_home-events__link +
+              ul.art_home-events__items.art_home-items
+                li.art_home-items__item
+                    .cheap
+                                    .art_home-items__data.art_home-items-data
+                                      .art_home-items-data__day ПН
+                                      .art_home-items-data__number 11
+
+                                    h5.cheap__title Сегодня, 19:15 - 20:15
+                                    p.cheap__text  Проектирование по проекту АБС №12345
+                li.art_home-items__item
+                    .cheap
+                                    .art_home-items__data.art_home-items-data
+                                      .art_home-items-data__day вт
+                                      .art_home-items-data__number 12
+
+                                    h5.cheap__title Завтра, 19:15 - 20:15
+                                    p.cheap__text  Новое событие
+                li.art_home-items__item
+                    .cheap
+                                    .art_home-items__data.art_home-items-data
+                                      .art_home-items-data__day вт
+                                      .art_home-items-data__number 12
+
+                                    h5.cheap__title Завтра, 20:15 - 22:15
+                                    p.cheap__text  Новое событие
+                li.art_home-items__item
+                    .cheap
+                                    .art_home-items__data.art_home-items-data
+                                      .art_home-items-data__day ср
+                                      .art_home-items-data__number 13
+
+                                    h5.cheap__title Завтра, 19:15 - 20:15
+                                    p.cheap__text  Новое событие
             
             section.art_vidget-home__interview.art_board.art_home-interview
               .art_home-interview__top.art_title-top  Опросы
+              ul.art_home-interview__items.art_home-interview-items
+                li.art_home-interview-items__item
+                  
+                  .cheap
+                                    img.cheap__img(src="assets/img/home/img-3.webp",alt="img")
+                                    h5.cheap__title Требуют заполнения
+                                    a(href="#!").art_home-interview-items__number.art_home-interview-items__number--active 2
+                li.art_home-interview-items__item
+                  
+                  .cheap
+                                    img.cheap__img(src="assets/img/home/img-4.webp",alt="img")
+                                    h5.cheap__title Заполнено за 30 дней
+                                    a(href="#!").art_home-interview-items__number 18
 
             section.art_vidget-home__social.art_board.art_home-social
               .art_home-social__top.art_title-top Cоц. сети
+              ul.art_home-social__items.art_home-social-items
+                li.art_home-social-items__item.art_home-social-items-item
+                  .cheap
+                    a(href="#!").cheap__img
+                      img(src="assets/img/home/img-6.svg",alt="img")
+                    h5.cheap__title Instagram #1
+                li.art_home-social-items__item.art_home-social-items-item
+                  .cheap
+                    a(href="#!").cheap__img
+                      img(src="assets/img/home/img-6.svg",alt="img")
+                    h5.cheap__title Instagram #2
+                
+                li.art_home-social-items__item.art_home-social-items-item
+                  .cheap
+                    a(href="#!").cheap__img
+                      img(src="assets/img/home/img-5.svg",alt="img")
+                    h5.cheap__title Telegram #3
+                li.art_home-social-items__item.art_home-social-items-item
+                  .cheap
+                    a(href="#!").cheap__img
+                      img(src="assets/img/home/img-7.svg",alt="img")
+                    h5.cheap__title Telegram #3

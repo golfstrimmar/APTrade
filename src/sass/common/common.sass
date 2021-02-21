@@ -112,8 +112,33 @@ a
 
 
 // ============================================================================
+$cheap: 40px
+$cheap-title: 20px
+$cheap-text: 20px
+//------.cheap--------
+.cheap
+  *
+    +border(1px,#0288D1)
+    +bg(rgba(0,172,193, .4))
+  +bg(#EF9A9A)
+  +border(1px,#01579B)
+  padding: 0 0 0 $cheap
 
-  
+//-------------
+
+//------.cheap__img--------
+.cheap__img
+  width:  $cheap
+  height: $cheap
+  float: left
+  margin: 0 0 0 (-$cheap)
+//-------------
+//------.cheap__title--------
+.cheap__title
+  padding: 0 0 0 $cheap-title
+
+.cheap__text
+  padding: 0 0 0 $cheap-text
 
 
 body
