@@ -2,8 +2,40 @@ main#art_inner-home.art_inner.art_inner--home
 
     .art_container
         .art_inner__wrapper.art_inner__wrapper--home
-          section.art_inner__content.art_inner__content--home.art_inner-content  .art_inner-content
+          section.art_inner__content.art_inner__content--home.art_inner-content  
+            article.art_inner-content__article.art_inner-content__article--news.art_board.art_inner-article
+              h2.art_inner-article__title.art_inner-article__title--news.art_title новости компании <a href="#!" class="art_inner-article__link">  Все новости </a>
+              ul.art_inner-article__cards  
+                  li.art_inner-article__card
+                    a(href="#!").art_inner-article-card
+                      .art_inner-article-card__title  Эй-Пи Трейд 25 лет!
+                  li.art_inner-article__card
+                    a(href="#!").art_inner-article-card
+                      .art_inner-article-card__title  Интеграция логистики
+                  li.art_inner-article__card
+                    a(href="#!").art_inner-article-card
+                      .art_inner-article-card__title  Интеграция компаний
+            article.art_inner-content__article.art_inner-content__article--news.art_board.art_inner-article
+              h2.art_inner-article__title.art_inner-article__title--news.art_title сервисы и заявки <a href="#!" class="art_inner-article__link">  Все сервисы </a>
+              ul.art_inner-article__serices.art_inner-article-serices
+                
 
+                - 
+                  items = [
+                      { url: "assets/img/home/img-11.webp " },
+                      { url: "assets/img/home/img-12.webp " },
+                      { url: "assets/img/home/img-13.webp " },
+                      { url: "assets/img/home/img-14.webp " },
+                      { url: "assets/img/home/img-15.webp " },
+                      { url: "assets/img/home/img-16.webp " },
+                    ]
+
+                each item in items
+                  li.art_inner-article-serices__service
+                    a(href="#!").art_inner-article-card
+                      img(src=item.url,alt="img")
+                    .art_inner-article-serices__hint  Справки
+          
           aside.art_inner__vidget.art_inner__vidget--home.art_vidget-home
             section.art_vidget-home__massages.art_board.art_home-massages 
               .art_home-massages__top.art_title-top Важные сообщения
