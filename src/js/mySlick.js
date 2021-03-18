@@ -1,4 +1,4 @@
-import $ from "jquery";
+import $, { each } from "jquery";
 // import "./slick.js";
 
 
@@ -10,26 +10,26 @@ $(Document).ready(function () {
     speed: 800,
     easing: "ease",
     cssEase: "linear",
-    centerMode: true,
+    // centerMode: true,
     nextArrow: $(".slider__arrow_next--1"),
     prevArrow: $(".slider__arrow_prev--1"),
     responsive: [
+      // {
+      //   breakpoint: 1920,
+      //   settings: {
+      //     slidesToShow: 4,
+      //   },
+      // },
       {
-        breakpoint: 1920,
+        breakpoint: 1500,
         settings: {
           slidesToShow: 4,
         },
       },
       {
-        breakpoint: 1800,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 2,
         },
       },
     ],
@@ -47,6 +47,37 @@ $(Document).ready(function () {
     prevArrow: $(".slider__arrow_prev--2"),
   
   });
+
+
+
+let array = [];
+$.each($(".slider-js-2 .art_article-data-item"), function (index) {
+  let t = $(this).attr("data");
+  array.push(t);
+});
+
+let result = [];
+var q = (array.length - 1) / 2;
+array.filter((item, index) => {
+if (index > q) return result.push(item);
+});
+
+var i = 0;
+var values = $(".slider-js-2 .slick-dots li ").each(function () {
+  return $(this).text(result[i++]);
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
   $(".slider-massages-js-1").slick({
     dots: true,

@@ -9,9 +9,7 @@ $(window).on("load", function () {
 });
 
 $(document).ready(function (e) {
-  document.querySelector(
-    ".art_inner__vidget"
-  ).style.cssText = `top: auto; `;
+  document.querySelector(".art_inner__vidget").style.cssText = `top: auto; `;
 
   window.addEventListener("scroll", function (event) {
     if (window.pageYOffset > 347) {

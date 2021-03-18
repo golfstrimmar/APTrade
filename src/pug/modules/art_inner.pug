@@ -38,8 +38,6 @@ main#art_inner.art_inner
                       .slider__arrows.slider__arrows--history
                         i.slider__arrow.slider__arrow--history.slider__arrow_prev.slider__arrow_prev--history.slider__arrow_prev--2.icon-arrow-left
                         i.slider__arrow.slider__arrow--history.slider__arrow_next.slider__arrow_next--history.slider__arrow_next--2.icon-arrow-right
-
-                        
                         
                       ul.slider__body.slider-js-2
                         - 
@@ -59,9 +57,22 @@ main#art_inner.art_inner
                               { title: "2005", },
                               { title: "2004", },
                               { title: "2003", },
+                              { title: "2002", },
+                              { title: "2001", },
+                              { title: "2000", },
+                              { title: "1999", },
+                              { title: "1998", },
+                              { title: "1997", },
+                              { title: "1996", },
+                              { title: "1995", },
+                              { title: "1994", },
+                              { title: "1993", },
+                              { title: "1992", },
+                              { title: "1991", },
+                              { title: "1990", },
                             ]
                         each item in items
-                          li.art_inner-article-data__item.art_article-data-item
+                          li.art_inner-article-data__item.art_article-data-item(data=item.title)
                             .art_inner-article-info
                               .art_inner-article-info__title Заключен контракт с Jacobs
                               .art_inner-article-info__text Дистрибуция в Хабаровске, Благовещенске, Комсомольске-на-Амуре, Камчатке
@@ -162,6 +173,7 @@ main#art_inner.art_inner
                   input#cb1(type='checkbox')
                   label(for='cb1') Согласен с манифестом
                 .art_article-check__info Уже подписали: 144
+            
             article#team.art_inner-content__article.art_board.art_inner-article.art_inner-content__article--mission
               h2.art_inner-article__title.art_title.art_inner-article__title--mission Команда
               .art_inner-article__right.art_inner-article__right--mission
