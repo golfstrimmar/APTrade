@@ -34,49 +34,72 @@ main#art_inner.art_inner
                 p.art_inner-article__paragraph  История АР Трейд создается совместными усилиями наших сотрудников, клиентов и партнеров.  Каждый человек, каждая высказанная идея и каждое решение, воплощенное в жизнь, способствуют нашему общему делу. 
                 
                 .art_inner-article__data.art_inner-article-data
-                  .slider.slider__slider.slider__slider--history
-                      .slider__arrows.slider__arrows--history
-                        i.slider__arrow.slider__arrow--history.slider__arrow_prev.slider__arrow_prev--history.slider__arrow_prev--2.icon-arrow-left
-                        i.slider__arrow.slider__arrow--history.slider__arrow_next.slider__arrow_next--history.slider__arrow_next--2.icon-arrow-right
+                  .art_inner-article__data-body
+                    ul.slider-cards__slider.slider__body.slider-js-duble--1( data-prev="icon-arrow-left" data-next="icon-arrow-right"  )
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2017
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2016
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2015
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2014
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2013
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2012
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2011
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2010
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2009
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2008
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2007
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2006
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2005
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2004
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2003
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2002
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2001
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 2000
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 1999
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 1998
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 1997
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 1996
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 1995
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 1994
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 1993
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 1992
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 1991
+                        li.slider-cards__item.slider-card
+                          .slider-card__title 1990
                         
-                      ul.slider__body.slider-js-2
-                        - 
-                          items = [
-                              { title: "2017", },
-                              { title: "2016", },
-                              { title: "2015", },
-                              { title: "2014", },
-                              { title: "2013", },
-                              { title: "2012", },
-                              { title: "2011", },
-                              { title: "2010", },
-                              { title: "2009", },
-                              { title: "2008", },
-                              { title: "2007", },
-                              { title: "2006", },
-                              { title: "2005", },
-                              { title: "2004", },
-                              { title: "2003", },
-                              { title: "2002", },
-                              { title: "2001", },
-                              { title: "2000", },
-                              { title: "1999", },
-                              { title: "1998", },
-                              { title: "1997", },
-                              { title: "1996", },
-                              { title: "1995", },
-                              { title: "1994", },
-                              { title: "1993", },
-                              { title: "1992", },
-                              { title: "1991", },
-                              { title: "1990", },
-                            ]
-                        each item in items
-                          li.art_inner-article-data__item.art_article-data-item(data=item.title)
-                            .art_inner-article-info
-                              .art_inner-article-info__title Заключен контракт с Jacobs
-                              .art_inner-article-info__text Дистрибуция в Хабаровске, Благовещенске, Комсомольске-на-Амуре, Камчатке
-                              .art_inner-article-info__title  Заключены контракты с Bridgestone, Nokian Tyres, “АЮСС-Лоджистик”, KYB, Idemitsu
+                .slider.slider__slider.slider__slider--history
+                            ul.slider__body.slider-js-2
+                              - for (var x = 0; x < 27; x++)
+                                  li.art_inner-article-info
+                                    .art_inner-article-info__title Заключен контракт с Jacobs
+                                    .art_inner-article-info__text Дистрибуция в Хабаровске, Благовещенске, Комсомольске-на-Амуре, Камчатке
+                                    .art_inner-article-info__title  Заключены контракты с Bridgestone, Nokian Tyres, “АЮСС-Лоджистик”, KYB, Idemitsu
 
                 h3.art_inner-article__sub-title.art_title-2.art_inner-article__sub-title--mission Награды
                 .art_inner-article__slider.slider.slider__slider.article-slider

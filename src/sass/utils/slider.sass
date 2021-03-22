@@ -1,26 +1,8 @@
-
-  
-.slider__slider 
-  // min-height: 400px
-  
-  
-  
-  
-  
-  
 .slider
   position: relative
 
 .slider__body,.slider__item
   +pro
-  // min-height: 400px
-
-.slider__item
-  // max-width: 200px
-  // margin: 0 15px
-  // border-top-left-radius: 10px
-  // border-bottom-left-radius: 10px
-
 
 .slider__arrows
   position: relative
@@ -50,37 +32,80 @@
   .slick-slide
     margin: 0 7px
   
-// .slick-dots li:not(.slick-active)
-//     display: none
-// .slick-active
-//     z-index: 2
-//     display: inline-flex
-//     +absolute( 71px, 38px, null, null, 10px,0,0)
-//     bottom:  10px
+
+.art_inner-article__data-body
+  padding: 0 85px!important
+  +pro
+  background: #F5F7F9
+
+.slider-js-duble--1
+  padding: 14px 0
+  height: 72px
+  
+  border-radius: 6px
+  .slick-slide
+    margin: 0 15px 0 0
+    // padding: 0 15px 0 0	
+    // margin: 0 -12px 0 0
+    transition: all .2s ease-in-out
+    // max-width: 52px!important 
+  .slick-current
+    li
+      transition: all 0.2s ease-in-out
+      +bg($active)
+      .slider-card__title
+        color: white
+  .slider-cards__item
+    +center
+    display: flex !important
+    padding: 0 0 0 0
+    +pro
+    // min-width: 52px
+    height: 44px
+    background: #FFFFFF
+    border-radius: 6px
+  .slider-card__title
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 24px
+    color: #535C69
+    
+  .slider__body
+    
+    // min-height: 400px
+    // +bg(blue)
+  .slick-arrow
+    position: absolute
+    top:50%
+    transform: translateY(-50%)
+    z-index: 20
+    font-size: 0
+    border-radius: 50%
+    // +bg( blue )
+    transition: all 0.2s ease-in-out
+    width: 52px
+    height: 44px
+    background: #fff
+    border-radius: 6px
+    i
+      font-size: 20px
+      transition: all 0.2s ease-in-out
+      color: $active
+
+    &:hover
+      cursor: pointer
+      // +bg( blue )
+      opacity: .5
+      i
+        
+  .slick-prev
+    left: -67px
+  .slick-next
+    right: -67px
 
 
-// .slick-dots-current
-//     font-weight: normal
-//     font-size: 15px
-//     color: $white
-//     margin: 0 0 0 
-// .slick-dots-total
-//     font-weight: normal
-//     color: $white
-//     font-size: 15px
-//     margin: 0 0 0 
-// .slick-dots-separator
-//     color: white
-//     font-size: 15px
-//     font-weight: normal
-//     margin: 0 5px
-// .slick-dots-button
-//     +center 
-//     background: transparent
-//     width: 71px
-//     height: 38px
-//     border-radius: 10px
-//     background: rgba(24,24,24, .6)
 
 //------.slider-massages-js-1--------
 .slider-massages-js-1
@@ -151,72 +176,72 @@
 
 
 
-.slider__slider--history
-  margin: 83px 0  0
-  +bg(white)
-.slider__arrows--history
-  top: -135px!important
-  transform: translate(0,0)
-  height: 44px
-.slider__arrow--history
-    +absolute( 52px, 44px, 63px,  auto,  auto,0,0)
-    border-radius: 6px!important
-    +bg(white!important)
-    font-size: 18px!important
-    color: #29A7DC!important
-    z-index: 3
-    &:hover
-      cursor: pointer
+// .slider__slider--history
+//   margin: 83px 0  0
+//   +bg(white)
+// .slider__arrows--history
+//   top: -135px!important
+//   transform: translate(0,0)
+//   height: 44px
+// .slider__arrow--history
+//     +absolute( 52px, 44px, 63px,  auto,  auto,0,0)
+//     border-radius: 6px!important
+//     +bg(white!important)
+//     font-size: 18px!important
+//     color: #29A7DC!important
+//     z-index: 3
+//     &:hover
+//       cursor: pointer
 
-.slider__arrow_prev--history
-  left:20px
-.slider__arrow_next--history
-  right:20px
+// .slider__arrow_prev--history
+//   left:20px
+// .slider__arrow_next--history
+//   right:20px
   
-.slider-js-2
-  .slick-dots
-    +jucb
-    +alic
-    padding: 0 87px	
-    position: relative
-    +absolute(100%,72px,-86px,0,auto,0%,0%)
-    background: #F5F7F9
-    border-radius: 6px
-    flex-wrap: nowrap
+// .slider-js-2
+//   .slick-dots
+//     +jucb
+//     +alic
+//     padding: 0 87px	
+//     position: relative
+//     +absolute(100%,72px,-86px,0,auto,0%,0%)
+//     background: #F5F7F9
+//     border-radius: 6px
+//     flex-wrap: nowrap
     
-    &:after
-      content: ""
-      background-color: #F5F7F9
-      position: absolute
-      width: 92px
-      height: 72px
-      top: 0% 
-      right: 0
-      z-index: 2
-      box-shadow: -25px 0px 20px -7px #F5F7F9
-  .slick-dots 
-    overflow: hidden
-    li
-      background: #fff
-      border-radius: 6px
-      min-width: 52px!important
-      height: 44px!important
-      +center
-      transition: all 0.2s ease-in-out
-      margin: 0 7px
-      color: #535C69
-      font-weight: bold
-      font-size: 14px
-      line-height: 24px
-      transition: all 0.2s ease-in-out
-      &:hover
-        cursor: pointer
-      button
-        display: none
+//     &:after
+//       content: ""
+//       background-color: #F5F7F9
+//       position: absolute
+//       width: 92px
+//       height: 72px
+//       top: 0% 
+//       right: 0
+//       z-index: 2
+//       // box-shadow: -25px 0px 20px -7px #F5F7F9
+//   .slick-dots 
+//     overflow: hidden
+//     li
+//       background: #fff
+//       border-radius: 6px
+//       min-width: 52px!important
+//       height: 44px!important
+//       +center
+//       transition: all 0.2s ease-in-out
+//       margin: 0 7px
+//       color: #535C69
+//       font-weight: bold
+//       font-size: 14px
+//       line-height: 24px
+//       transition: all 0.2s ease-in-out
+//       &:hover
+//         cursor: pointer
+//       button
+//         display: none
 
-    li.slick-active
-      background: #29A7DC
-      color: white
+//     li.slick-active
+//       background: #29A7DC
+//       color: white
     // li
       // position: relative
       // transition: all 0.2s ease-in-out
